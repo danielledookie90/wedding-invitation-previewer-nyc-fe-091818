@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Wedding Invitation Designer</title>
+  </head>
+  
+   <h1>Design Your Wedding Invitation</h1>
+   
+<div id="formal-background-image">
+  <input type="radio" name="style" onclick='img(0)' value="https://i.pinimg.com/originals/37/97/a1/3797a1693791525c54e497fcb89c2929.jpg"> Formal<br>
+  </div>
+  
+  <div id="spring-background-image">
+   <input type="radio" name="style" value="https://i.pinimg.com/originals/f2/6b/a0/f26ba0d2b75f56ba8617cddc3bb30ef2.jpg"> Spring <br>
+   </div>
+   
+   <div id="art-deco-background-image">
+   <input type="radio" name="style" value="https://i.pinimg.com/originals/4a/93/cd/4a93cdbf624f8995c2021ba5ae747fd4.jpg"> Art Deco <br>
+   </div>
+ <!--<a href="https://i.pinimg.com/originals/37/97/a1/3797a1693791525c54e497fcb89c2929.jpg">Formal</a>-->
+  <!--<a href="https://i.pinimg.com/originals/f2/6b/a0/f26ba0d2b75f56ba8617cddc3bb30ef2.jpg">Spring</a>-->
+  <!--<a href="https://i.pinimg.com/originals/4a/93/cd/4a93cdbf624f8995c2021ba5ae747fd4.jpg">Art Deco</a>-->
+
+
+<div id= grid-container>
+  
+<div class="form-container">
+  
+    <form action="/home.html" method="get">
+      
+      <div>
+        <label for="first-name">First Name:</label>
+   <input id="first-name" name="first name" type="text" placeholder="Enter Name" required>
+    </div>
+  
+    
+    <div>
+       <label for="second-name">Second Name:</label>
+   <input id="second-name" name="second name" type="text" placeholder="Enter Name" required>
+   </div>
+   
+     <div>
+       <label for="last-name">Last Name:</label>
+   <input id="last-name" name="last Name" type="text" placeholder="Enter Name" required>
+   </div>
+   
+   <div>
+     <label for="date"> Date:</label>
+
+<input type="date" id="date" name="wedding-date"
+       value=""
+       min="2019-01-01" max="2022-12-31">
+       </div>
+   
+   <div>
+       <label for="wedding-location">Wedding Location:</label>
+   <input id="wedding-location" locaton="wedding location" type="text" placeholder="Enter Location" required>
+   </div>
+   
+   <div class="Preview"></div>
+  <div class=".topnav"></div>
+  </form>
+  </div>
+  
+  <div>
+
+  <div id="first-name-invite"></div>
+   <div id="second-name-invite"></div>
+   <div id="last-name-invite"></div>
+   <div id="date-invite"></div>
+   <div id="wedding-location-invite"></div>
+  </div>
+  
+  </div>
+  
+   <script src='./index.js'></script>
+  
+</html>
